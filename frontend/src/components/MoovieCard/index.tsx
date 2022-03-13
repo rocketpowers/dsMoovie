@@ -1,4 +1,5 @@
 import MoovieScore from "components/MoovieScore";
+import { Link } from "react-router-dom";
 
 function MoovieCard() {
   const moovie = {
@@ -18,7 +19,13 @@ function MoovieCard() {
         
         <h3>{moovie.title}</h3>
         <MoovieScore />
+
+        <Link to={`/form/${moovie.id}`}>
+
         <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+
+        </Link>
+        
       </div>
     </div>
   );
