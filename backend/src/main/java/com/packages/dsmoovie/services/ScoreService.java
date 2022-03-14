@@ -41,26 +41,23 @@ public class ScoreService {
 		score.setMoovie(moovie);
 		score.setUser(user);
 		score.setValue(dto.getScore());
-		
-		score= scoreRepository.saveAndFlush(score);
-		
-		
-		double sum=0.0;
+
+		score = scoreRepository.saveAndFlush(score);
+
+		double sum = 0.0;
 		for (Score s : moovie.getScores()) {
-			sum = sum +s.getValue();
-		
+			sum = sum + s.getValue();
+
 		}
-	
-		double avg = sum /moovie.getScores().size();
-		
+
+		double avg = sum / moovie.getScores().size();
+
 		moovie.setScore(avg);
 		moovie.setCount(moovie.getScores().size());
-		
+
 		moovie = moovieRepository.save(moovie);
-		
+
 		return new MoovieDto(moovie);
-		
-		
-		
-    	}
+
 	}
+}

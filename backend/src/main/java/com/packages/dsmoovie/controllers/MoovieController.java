@@ -27,7 +27,7 @@ public class MoovieController {
 		
 	}
 	
-	@GetMapping(value="/{id}")
+	@GetMapping(value = "/{id}")
 	public MoovieDto findById(@PathVariable Long  id){
 		
 		return service.findById(id);
