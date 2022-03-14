@@ -1,7 +1,13 @@
 import Pagination from "components/Pagination";
 import MoovieCard from "components/MoovieCard";
+import axios from "axios";
+import { BASE_URL } from "utils/requests";
 
 function Listing() {
+
+  axios.get(`${BASE_URL}/moovies`).then(Response=>{
+    console.log(Response.data);
+  });
   return (
     <>
       <Pagination />
