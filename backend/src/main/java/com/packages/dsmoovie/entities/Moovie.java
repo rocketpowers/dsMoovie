@@ -1,9 +1,13 @@
 package com.packages.dsmoovie.entities;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -23,6 +27,9 @@ public class Moovie {
 	private Integer count;
 	private String image;
 	
+	@OneToMany(mappedBy="id.moovie")
+	private Set<Score> scores=new HashSet<>();
+	
 	public Moovie() {
 		
 	}
@@ -35,6 +42,12 @@ public class Moovie {
 		this.image = image;
 	}
 	
+	public Set<Score> getScores() {
+		return scores;
+	}
+
+	}
+	
 	
 
-}
+

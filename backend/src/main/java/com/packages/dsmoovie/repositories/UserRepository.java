@@ -3,9 +3,14 @@ package com.packages.dsmoovie.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.packages.dsmoovie.entities.Moovie;
+import com.packages.dsmoovie.entities.User;
 
 
-public interface MoovieRepository extends JpaRepository<Moovie, Long>{
+
+public interface UserRepository extends JpaRepository<User, Long> {
+	
+	
+	User findByEmail(String email);
+	
 
 }

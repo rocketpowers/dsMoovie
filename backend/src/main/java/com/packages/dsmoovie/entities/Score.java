@@ -14,6 +14,7 @@ public class Score {
 	
 	@EmbeddedId
 	private ScorePk id = new ScorePk();
+	
 	private Double value;
 	
 	public Score() {
