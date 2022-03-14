@@ -4,12 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.packages.dsmoovie.dto.MoovieDto;
-import com.packages.dsmoovie.dto.ScoreDto;
-import com.packages.dsmoovie.entities.Moovie;
+
+
+import com.packages.dsmoovie.dto.MovieDTO;
+import com.packages.dsmoovie.dto.ScoreDTO;
+import com.packages.dsmoovie.entities.Movie;
+
 import com.packages.dsmoovie.entities.Score;
 import com.packages.dsmoovie.entities.User;
-import com.packages.dsmoovie.repositories.MoovieRepository;
+import com.packages.dsmoovie.repositories.MovieRepository;
+
 import com.packages.dsmoovie.repositories.ScoreRepository;
 import com.packages.dsmoovie.repositories.UserRepository;
 
@@ -17,7 +21,7 @@ import com.packages.dsmoovie.repositories.UserRepository;
 public class ScoreService {
 
 	@Autowired
-	private MoovieRepository moovieRepository;
+	private MovieRepository movieRepository;
 
 	@Autowired
 	private UserRepository userRepository;
@@ -26,7 +30,7 @@ public class ScoreService {
 	private ScoreRepository scoreRepository;
 
 	@Transactional
-	public MoovieDto saveScore(ScoreDto dto) {
+	public MovieDTO saveScore(ScoreDTO dto) {
 
 		User user = userRepository.findByEmail(dto.getEmail());
 		if (user == null) {
@@ -35,29 +39,29 @@ public class ScoreService {
 			user = userRepository.saveAndFlush(user);
 		}
 
-		Moovie moovie = moovieRepository.findById(dto.getMoovieId()).get();
+		Movie movie = movieRepository.findById(dto.getMovieId()).get();
 
 		Score score = new Score();
-		score.setMoovie(moovie);
+		score.setMovie(movie);
 		score.setUser(user);
 		score.setValue(dto.getScore());
 
 		score = scoreRepository.saveAndFlush(score);
 
 		double sum = 0.0;
-		for (Score s : moovie.getScores()) {
+		for (Score s : movie.getScores()) {
 			sum = sum + s.getValue();
 
 		}
 
-		double avg = sum / moovie.getScores().size();
+		double avg = sum / movie.getScores().size();
 
-		moovie.setScore(avg);
-		moovie.setCount(moovie.getScores().size());
+		movie.setScore(avg);
+		movie.setCount(movie.getScores().size());
 
-		moovie = moovieRepository.save(moovie);
+		movie = movieRepository.save(movie);
 
-		return new MoovieDto(moovie);
+		return new MovieDTO(movie);
 
 	}
 }

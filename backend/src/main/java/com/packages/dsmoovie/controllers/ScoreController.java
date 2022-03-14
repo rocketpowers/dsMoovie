@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.packages.dsmoovie.dto.MoovieDto;
-import com.packages.dsmoovie.dto.ScoreDto;
+import com.packages.dsmoovie.dto.MovieDTO;
+import com.packages.dsmoovie.dto.ScoreDTO;
 import com.packages.dsmoovie.services.ScoreService;
 
 @RestController
@@ -19,10 +19,10 @@ public class ScoreController {
 	private ScoreService service;
 	
 	@PutMapping
-	public MoovieDto saveScore(@RequestBody ScoreDto dto) {
+	public  MovieDTO saveScore(@RequestBody ScoreDTO dto) { 
 
-		MoovieDto moovieDto = service.saveScore(dto);  
-		return moovieDto;
+		MovieDTO movieDTO = service.saveScore(dto);  
+		return movieDTO;
 	}
 
 }
