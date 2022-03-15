@@ -1,0 +1,113 @@
+[33mcommit 0145046236b0e7629babe6a1189362517a35c72d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Mon Mar 14 18:16:44 2022 -0300
+
+    save score fixed up
+
+[33mcommit 9fa2ed923299e2eeb1ac4ae8189cd1245667dc6b[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Mon Mar 14 01:37:22 2022 -0300
+
+    props
+
+[33mcommit c30a8a3f73113fcf58d7393ae1b63d661d79a261[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Mon Mar 14 00:34:02 2022 -0300
+
+    userEffect
+
+[33mcommit 5447cdb38760b858c9336f4663b0994ba1ad4443[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Mon Mar 14 00:15:10 2022 -0300
+
+    first request
+
+[33mcommit 09bfc6e40e6ede3d636e01ab6503711f5ac3af04[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 23:51:31 2022 -0300
+
+    _redirects
+
+[33mcommit d6bbb902256f65c0c2280db3fc5dc992595be238[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 23:11:21 2022 -0300
+
+    first homolog
+
+[33mcommit 6e8b1cf2e5f0aef822de7b96bc1ccdd26d25a394[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 22:46:43 2022 -0300
+
+    save score fix
+
+[33mcommit 153778194f919cf60d5fd556c19a7655d25921cc[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 19:07:58 2022 -0300
+
+    find moovies add
+
+[33mcommit a3edd1990b22842cea9a33afd4af1a073e218d95[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 17:56:02 2022 -0300
+
+    domain model database seed
+
+[33mcommit ad7f2e495247c496e06fc55a00b1ed8fb2d98d81[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 13:52:53 2022 -0300
+
+    security config add
+
+[33mcommit 49969a0f4b531216c0d80432e76ca7df121af500[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 12:27:50 2022 -0300
+
+    navegation button cancel add
+
+[33mcommit f072241330da0892be3ccad1e3464da2149e5f50[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 12:12:26 2022 -0300
+
+    moovie card add
+
+[33mcommit ff5af3a8824e0ad4eab35583f00b4d8e7ad9a5ba[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 10:14:24 2022 -0300
+
+    pagination layot add
+
+[33mcommit 5644e626263a2bc92aada2743dba510193eea8b3[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 10:00:39 2022 -0300
+
+    form layout add
+
+[33mcommit a155949ab41a984c5be8ec7014b3d9f07683fbc6[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sun Mar 13 09:48:20 2022 -0300
+
+    routers created
+
+[33mcommit c5f45f523f5df99a255f1807abc21068a556e9bc[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Sat Mar 12 20:22:12 2022 -0300
+
+    nav bar included
+
+[33mcommit f474cd3b1d8de0cb4a66421770e1e2bfbadd88be[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Tue Mar 8 23:13:28 2022 -0300
+
+    bootstrap add
+
+[33mcommit ffc075b8f1b61578c8275f25eb09e3d2c3dbb7b7[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Tue Mar 8 23:02:14 2022 -0300
+
+    project clean
+
+[33mcommit 0a7e67a565822851df408a5ec608b55240499c32[m
+Author: rocketpowers <rocketpowerswillian@gmail.com>
+Date:   Tue Mar 8 22:40:06 2022 -0300
+
+    project created
