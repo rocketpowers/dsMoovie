@@ -7,7 +7,7 @@ import "./styles.css";
 
 type Props = {
   movieId: String;
-};
+}
 
 function FormCard({ movieId }: Props) {
 
@@ -22,11 +22,7 @@ function FormCard({ movieId }: Props) {
  
   return (
     <div className="dsmovie-form-container">
-      <img
-        className="dsmovie-movie-card-image"
-        src={movie?.image}
-        alt={movie?.title}
-      />
+      <img className="dsmovie-movie-card-image" src={movie?.image} alt={movie?.title}/>
       <div className="dsmovie-card-bottom-container">
         <h3>{movie?.title}</h3>
         <form className="dsmovie-form">
@@ -45,9 +41,7 @@ function FormCard({ movieId }: Props) {
             </select>
           </div>
           <div className="dsmovie-form-btn-container">
-            <button type="submit" className="btn btn-primary dsmovie-btn">
-              Salvar
-            </button>
+            <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
           </div>
         </form>
         <Link to="/">
